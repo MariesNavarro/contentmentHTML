@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta name="google" content="notranslate"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+	<title>The Contentment Foundation</title>
+	<meta name="description" content="The Contentment Foundation believes in a world where happiness is cultivated from the inside out. Not the other way around."/>
+	<meta name="author" content="fluo.com.mx">
+	<meta property="og:title" content="The Contentment Foundation">
+	<meta property="og:url" content="http://www.contentment.org">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/media.jpg">
+	<meta property="og:description" content="The Contentment Foundation">
+	<meta property="og:site_name" content="The Contentment Foundation">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@fluomx">
+	<meta name="twitter:title" content="The Contentment Foundation">
+	<meta name="twitter:description" content="Team | The Contentment Foundation">
+	<meta name="twitter:image" content="img/media.jpg">
+	<meta name="keywords" content="The Contentment Foundation, Wellbeing, Sustainable, Four Pillars of Wellbeing"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Varela" rel="stylesheet">
+	<style>
+	/* LOADING */
+	#menuMain{
+		opacity: 0;
+
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+	#loading{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 50000;
+		background: #fff;
+		text-align: center;
+		opacity: 1;
+		display: block;
+
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+	#loading> img{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		top: calc(40% - 100px);
+		left: calc(50% - 100px);
+	}
+	#loading> span{
+		width: 200px;
+		height: 1px;
+		background: #C2C1C0;
+		position: absolute;
+		display: none;
+		top: calc(40% + 110px);
+		left: calc(50% - 100px);
+	}
+	#loading> p{
+		color: #C2C1C0;
+		width: 200px;
+		position: absolute;
+		display: none;
+		top: calc(40% + 130px);
+		left: calc(50% - 100px);
+	}
+	</style>
+</head>
+<body>
+	<div id="loading">
+			<img src="img/icons/logo_color.svg" alt="Logo The Contentment Foundation" width="200" height="200">
+			<span></span>
+			<p id="percentage"></p>
+	</div>
+	<p id="size"></p>
+	<nav id="menuMain">
+				<a href="index.html">
+					<img src="img/icons/logo.svg" alt="Logo The Contentment Foundation" width="120">
+				</a>
+				<button id="btnMobile" type="button" name="button">
+					<img id="btnMobileImg" src="img/icons/menu.svg" alt=" ">
+				</button>
+
+				<ul id="menu">
+					<li class="menuLinkLi inicioMobile"><a href="index.html">Home</a></li>
+					<li class="menuLinkLi"><a href="about.html">About Us</a></li>
+					<li class="menuLinkLi"><a href="community.html">Community</a></li>
+					<li class="menuLinkLi"><a href="wellbeing.html">Wellbeing Lab</a></li>
+					<li class="menuLinkLi"><a href="involved.html">Get Involved</a></li>
+					<li class="menuLinkLi"><a href="offerings.html">Offerings</a></li>
+					<li class="menuLinkLi"><a href="team.html">Our Team</a></li>
+					<li id="contactoBack"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web" target="_top">Contact</a></li>
+					<span></span>
+					<li class="socialMobile"><a href="#"><img src="img/icons/facebook.svg" alt=" "></a></li>
+					<li class="socialMobile" style="display:none"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web"><img src="img/icons/instagram.svg" alt=" "></a></li>
+					<li class="socialMobile"><a href="#"><img src="img/icons/twitter.svg" alt=" "></a></li>
+				</ul>
+	</nav>
+	<header>
+		<div id="btndonate">
+			<a href="donations.html">Donate</a>
+		</div>
+
+		<div id="slider">
+			<div id="slideUno" class="slides">
+				<div class="contentSlide">
+					<p>
+						<b>The Contentment Foundation</b> believes in a world where
+						happiness is cultivated from the inside out, not the
+						other way around. We serve by helping children and
+						adults draw their attention inward to experience
+						the unconditional joy that has been there all along.
+					</p>
+				</div>
+			</div>
+			<div id="slideDos" class="slides">
+				<div class="contentSlide">
+					<p>
+						We offer philosophically and scientifically-evidenced
+						curricula that cultivate mindfulness, compassion, gratitude,
+						self-awareness, and other core approaches to human flourishing.
+					</p>
+				</div>
+			</div>
+			<div id="slideTres" class="slides">
+				<div class="contentSlide">
+					<p>
+						At the deepest core of human wellness is a sense of
+						profound contentment, and uncovering it for yourself
+						is your birthright.
+					</p>
+				</div>
+			</div>
+
+			<div id="swipe"></div>
+		</div>
+		<div id="bulletsSlider">
+			<ul>
+				<li><span class="btnsSlide" id="uno"></span></li>
+				<li><span class="btnsSlide" id="dos"></span></li>
+				<li><span class="btnsSlide" id="tres"></span></li>
+			</ul>
+		</div>
+		<p id="scrollDownTitle" >Scroll Down</p>
+		<div id="mouseW">
+				<div id="scrollDown"></div>
+		</div>
+	</header>
+	<h1 id="TitleNew" style="display:none">The Contentment Foundation</h1>
+	<ul id="newText" style="display:none">
+		<li>
+			<img src="img/point1.svg" alt="Point" width="10">
+			<span></span>
+			<p>
+				The Contentment Foundation believes in a world where
+				happiness is cultivated from the inside out, not the
+				other way around. We serve by helping children and
+				adults draw their attention inward to experience
+				the unconditional joy that has been there all along.
+			</p>
+		</li>
+		<li>
+			<img src="img/point2.svg" alt="Point" width="10">
+			<span></span>
+			<p>
+				We offer philosophically and scientifically-evidenced
+				curricula that cultivate mindfulness, compassion, gratitude,
+				self-awareness, and other core approaches to human flourishing.
+			</p>
+		</li>
+		<li>
+			<img src="img/point3.svg" alt="Point" width="10">
+			<span></span>
+			<p>
+				At the deepest core of human wellness is a sense of
+				profound contentment, and uncovering it for yourself
+				is your birthright.
+			</p>
+		</li>
+	</ul>
+	<section id="fourPillars">
+		<h2>Four Pillars of Wellbeing</h2>
+		<ul>
+			<li class="pillar">
+				<div class="pillarImg" style="background-image: url('img/p1.jpg')"></div>
+				<a href="offerings.html?pillar=1">
+				<div class="pillarTitle">
+					<h3>Mindfulness</h3>
+					<ul class="pointsPillar">
+						<li>Self Awareness</li>
+						<li>Focused Attention</li>
+						<li>Nonjudgement</li>
+					</ul>
+				</div>
+			</a>
+				<a href="offerings.html">
+					<div class="pillarInfo">
+						<div class="cross"><img src="img/icons/cross.svg" alt=" "></div>
+						<div class="crossF"><img src="img/icons/crossF.svg" alt=" "></div>
+					</div>
+				</a>
+			</li>
+
+			<li class="pillar leftDos" style="top:24%">
+				<div class="pillarImg" style="background-image: url('img/p2.jpg')"></div>
+				<a href="offerings.html?pillar=2">
+				<div class="pillarTitle">
+					<h3>Community</h3>
+					<ul class="pointsPillar">
+						<li>Selfless Service</li>
+						<li>Compassion & Empathy</li>
+						<li>Forgiveness & Love</li>
+					</ul>
+				</div>
+				</a>
+				<a href="offerings.html">
+					<div class="pillarInfo">
+						<div class="cross"><img src="img/icons/cross.svg" alt=" "></div>
+						<div class="crossF"><img src="img/icons/crossF.svg" alt=" "></div>
+					</div>
+				</a>
+			</li>
+			<li class="pillar leftTres" style="top:48%">
+				<div class="pillarImg" style="background-image: url('img/p3.jpg')"></div>
+					<a href="offerings.html?pillar=3">
+				<div class="pillarTitle">
+					<h3>Self Curiosity</h3>
+					<ul class="pointsPillar">
+						<li>Self Questioning</li>
+						<li>Challenging Assumptions</li>
+						<li>Wonder & Awe</li>
+					</ul>
+				</div>
+				</a>
+				<a href="offerings.html">
+					<div class="pillarInfo">
+						<div class="cross"><img src="img/icons/cross.svg" alt=" "></div>
+						<div class="crossF"><img src="img/icons/crossF.svg" alt=" "></div>
+					</div>
+				</a>
+			</li>
+
+			<li class="pillar leftCuatro" style="top:72%">
+				<div class="pillarImg" style="background-image: url('img/p4.jpg')"></div>
+				<a href="offerings.html?pillar=4">
+				<div class="pillarTitle">
+					<h3>Contentment</h3>
+					<ul class="pointsPillar">
+						<li>Self Completeness</li>
+						<li>Acceptance & Flow</li>
+						<li>Equanimity</li>
+					</ul>
+				</div>
+			</a>
+				<a href="offerings.html">
+					<div class="pillarInfo">
+						<div class="cross"><img src="img/icons/cross.svg" alt=" "></div>
+						<div class="crossF"><img src="img/icons/crossF.svg" alt=" "></div>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+	</section>
+	<section id="getInvolved" >
+		<!-- UNO -->
+			<div>
+				<div id="mobileGet">
+					<img src="img/icons/planemobile.svg" alt=" ">
+					<br>
+					<p>Get Involved</p>
+					<br>
+					<br>
+					<br>
+					<form action="mailto:info@contentment.org?subject=Contact%20from%20web" method="post" enctype="text/plain">
+						<input style="padding:10px; text-align:center" type="text" name="Email" placeholder="yourmail@domain.com" >
+						<br><br>
+						<input style="background:#fff; color:#0190BE" id="buttonSend" type="submit" value="Send">
+					</form>
+				</div>
+				<div id="getDesktopPic">
+					<p>
+						The Contentment Foundation thrives because of passionate
+						individuals and organizations who believe in a world where
+						wellbeing is indestructible, and where everyone is encouraged
+						to fulfill their greatest potential inside and out.
+						<br><br>
+						Our service is to provide everyone - regardless of life situation
+						 - basic access to internal wellbeing wisdom.
+						<br><br>
+						<img src="img/icons/logo_nomargin.svg" alt="The Contentment Foundation" style="width:30%;">
+					</p>
+				</div>
+			</div>
+		<!-- DOS -->
+			<div>
+				<div id="getDesktopInfo">
+					<div>
+						<p>Get Involved</p>
+						<br>
+						<form action="mailto:info@contentment.org?subject=Contact%20from%20web" method="post" enctype="text/plain">
+							<input style="padding:10px; text-align:center" type="text" name="Email" placeholder="yourmail@domain.com" >
+							<br><br>
+							<input id="buttonSend" type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section id="donateFooter">
+		<div id="donateW">
+			<div id="donateRot">
+				<a href="donations.html">
+					<h3>Donate</h3>
+					<p>Make our work possible</p>
+					<img src="img/icons/circle.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<footer>
+				<div id="marginfooter"></div>
+				<div id="contentFooter">
+					<div>
+						<p>Copyright (c) 2017 | The Contentment Foundation | All Rights Reserved</p>
+					</div>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="community.html">Community</a></li>
+						<li><a href="wellbeing.html">Wellbeing Lab</a></li>
+						<li><a href="involved.html">Get Involved</a></li>
+						<li><a href="offerings.html">Offerings</a></li>
+						<li><a href="team.html">Our Team</a></li>
+					</ul>
+				</div>
+		</footer>
+	</section>
+<script src="js/bowser.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+var hidelandscape = document.getElementsByClassName('hidelandscape');
+var menuLinkLi = document.getElementsByClassName('menuLinkLi');
+var mobileGetLand = document.getElementById('mobileGet');
+window.addEventListener("orientationchange", function() {
+	mobileGetLand.style.top = "5%";
+  if(window.orientation == 90 || window.orientation == -90){
+			donateRot.style.margin = "3% auto auto 10%";
+			for(var i =0; i < hidelandscape.length; i++){
+				hidelandscape[i].style.opacity = "0";
+			}
+			for(var i =0; i < menuLinkLi.length; i++){
+				menuLinkLi[i].style.marginBottom = "2px";
+			}
+		} else {
+			donateRot.style.margin = "10% auto auto 10%";
+			mobileGetLand.style.top = "25%";
+			for(var i =0; i < menuLinkLi.length; i++){
+				menuLinkLi[i].style.marginBottom = "15px";
+			}
+		}
+	}, false);
+	window.onresize = function (){
+		document.getElementById("size").innerHTML = "W: " + window.innerWidth + "px | H: " + window.innerHeight + "px";
+	}
+	var menuMain = _('menuMain');
+	var percentage = _('percentage');
+	var loading = _('loading');
+	var donateRot = _('donateRot');
+	var valPercentage = 0;
+	var loop = setInterval(function(){
+	  valPercentage++;
+	  percentage.innerHTML = valPercentage + "%";
+	  if(valPercentage > 99) {
+	    clearInterval(loop);
+	    loading.style.opacity = "0";
+	    setTimeout(function(){
+				loading.style.display = "none";
+				menuMain.style.opacity = "1";
+			},500)
+	  }
+	},10);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="messages.js"></script>
+</body>
+</html>

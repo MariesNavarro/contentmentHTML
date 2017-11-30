@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta name="google" content="notranslate"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+    <title>About Us | The Contentment Foundation</title>
+    <meta name="description" content="About | We have heard an endless number of things that we should do to maximize our happiness."/>
+    <meta name="author" content="fluo.com.mx">
+    <meta property="og:title" content="The Contentment Foundation">
+    <meta property="og:url" content="http://www.contentment.org">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/media.jpg">
+    <meta property="og:description" content="About Us | The Contentment Foundation">
+    <meta property="og:site_name" content="The Contentment Foundation">
+    <meta name="description" content="About Us | The Contentment Foundation"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@fluomx">
+    <meta name="twitter:title" content="The Contentment Foundation">
+    <meta name="twitter:description" content="About Us | The Contentment Foundation">
+    <meta name="twitter:image" content="img/media.jpg">
+    <meta name="keywords" content="The Contentment Foundation, Members, Team"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Varela" rel="stylesheet">
+    <style>
+	/* LOADING */
+  #menuMain{
+		opacity: 0;
+
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+	#loading{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 50000;
+		background: #fff;
+		text-align: center;
+		opacity: 1;
+		display: block;
+
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+	#loading> img{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		top: calc(40% - 100px);
+		left: calc(50% - 100px);
+	}
+	#loading> span{
+		width: 200px;
+		height: 1px;
+		background: #C2C1C0;
+		position: absolute;
+		display: none;
+		top: calc(40% + 110px);
+		left: calc(50% - 100px);
+	}
+	#loading> p{
+		color: #C2C1C0;
+		width: 200px;
+		position: absolute;
+		display: none;
+		top: calc(40% + 130px);
+		left: calc(50% - 100px);
+	}
+</style>
+  </head>
+  <body>
+    <div id="loading">
+  			<img src="img/icons/logo_color.svg" alt="Logo The Contentment Foundation" width="200" height="200">
+  			<span></span>
+  			<p id="percentage"></p>
+  	</div>
+    <p id="size"></p>
+    <nav id="menuMain">
+  				<a href="index.html">
+  					<img src="img/icons/logo.svg" alt="Logotipo Contentment Foundation" width="120">
+  				</a>
+  				<button id="btnMobile" type="button" name="button">
+  					<img id="btnMobileImg" src="img/icons/menu.svg" alt=" ">
+  				</button>
+  				<ul id="menu">
+            <li class="menuLinkLi inicioMobile"><a href="index.html">Home</a></li>
+            <li class="menuLinkLi"><a href="about.html">About Us</a></li>
+  					<li class="menuLinkLi"><a href="community.html">Community</a></li>
+  					<li class="menuLinkLi"><a href="wellbeing.html">Wellbeing Lab</a></li>
+  					<li class="menuLinkLi"><a href="involved.html">Get Involved</a></li>
+  					<li class="menuLinkLi"><a href="offerings.html">Offerings</a></li>
+  					<li class="menuLinkLi"><a href="team.html">Our Team</a></li>
+  					<li id="contactoBack"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web" target="_top">Contact</a></li>
+  					<span></span>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/facebook.svg" alt=" "></a></li>
+  					<li class="socialMobile" style="display:none"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web"><img src="img/icons/instagram.svg" alt=" "></a></li>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/twitter.svg" alt=" "></a></li>
+  				</ul>
+  	</nav>
+    <div id="btndonate" class="aboutdonate">
+      <a href="donations.html">Donate</a>
+    </div>
+
+
+    <section id="chap1" class="chap">
+        <div id="chImgt1" class="chimg" style="background-image:url('img/about_header.jpg')"></div>
+        <div id="chText1" style="background:#0190BE">
+          <p>
+            <span>What is contentment?</span>
+            <br><br>
+            We have heard an endless number of things that we
+            should do to maximize our happiness – but why is
+            it that in the pursuit of happiness, it always seems
+            to be just outside of our grasp?
+            <br><br>
+            When we desire happiness, we are usually looking for
+            more of something – more money, more friends, more time,
+            and more success. Our current ideals of happiness depend
+            on constantly having more, which is neither sustainable
+            nor possible. The great news is that for over 5,000 years,
+            our ancestors have been focusing on contentment, a feeling
+            of completeness and enoughness with what is present right now.
+            <b>Contentment</b> is a sustainable form of wellbeing, just like solar
+            power is a sustainable source of energy.
+            <br><br>
+            In short, <b>contentment</b> is a kind of happiness that comes from the
+            inside, not the outside. Contentment means feeling complete and
+            whole just as we are, regardless of what’s going on around us.
+            It’s a feeling of unshakable peace that no one can take away from
+            you - and that no one can give to you either.
+          </p>
+        </div>
+    </section>
+
+    <section id="chap2" class="chap">
+        <div id="chText2" style="background:#2FC0CE">
+          <p>
+            <span>Why does Contentment matter?</span>
+            <br><br>
+            At the deepest core of human wellness is a sense of profound
+            contentment, and uncovering it for yourself is your birthright.
+            <b>Contentment</b> is a central theme in some of the most influential
+            spiritual, philosophical, and scientific works in ancient and
+            modern history. It is what most people really mean when they
+            talk about true 'happiness'.
+            <br><br>
+            In fact, when our team searched through the world’s greatest
+            philosophies, we found that contentment was referenced a lot -
+            but happiness rarely came up. Over and over again, our team
+            piled up the evidence that contentment was what most of us
+            are looking for, and that happiness was only a distraction.
+            Even scientific studies - dozens of them - were showing that
+            depending on external sources of happiness leads to less
+            happiness in the long run.
+            <br><br>
+            Philosophers, scientists, and many spiritual traditions say
+            that the real treasure lies within, so we realigned our
+            compasses to a new north star - contentment.
+          </p>
+        </div>
+        <div id="chImgt2" class="chimg" style="background-image:url('img/about_why.jpg')"></div>
+    </section>
+
+
+    <section id="chap3" class="chap">
+        <div id="chImgt3" class="chimg" style="background-image:url('img/about_what.jpg')"></div>
+        <div id="chText3" style="background:#54bf97">
+          <p>
+            <span>Why are we here?</span>
+            <br><br>
+            <b>The Contentment Foundation</b> believes in a
+            world where <i>happiness is cultivated from
+            the inside out</i>. Not the other way around.
+             We encourage people of all ages and backgrounds
+             to simply draw their attention inside and discover
+             for themselves the unconditional acceptance that has
+             been there all along.
+            <br><br>
+            We are simply translators that are taking the best
+            of our human philosophical legacy and interpreting
+            it for the modern mind. We’re not reinventing the
+            wellbeing wheel – we’re making the very basics
+            accessible for everyone. We’re especially interested
+            in creating opportunities for vulnerable populations
+            of children and adults who could benefit the most
+            from learning how to cultivate a sense of indestructible
+            wellbeing.
+            <br><br>
+            <span>Our Treasure Map</span>
+            <br><br>
+            <i>We believe that true happiness starts from within.</i>
+            <br><br>
+            The ideas that inspire us have been around for thousands
+            of years and and are at the heart of most philosophical,
+            spiritual, and scientific traditions searching for what
+            it means to be unconditionally well. The Contentment
+            Foundation is playing a role in translating some of the
+            very basics from the heart of these traditions, testing
+            them scientifically, and offering the core practices to
+            children and adults who are interested in them.
+            <br><br>
+            We share humanity’s most effective wellness practices
+            through our three branches – childhood education, adult
+            development, and scientific research. We search for the
+            place where science, philosophy, and human wellness meet -
+            and therein lies the treasure that helps the modern mind
+            turn inward. From there, we provide evidence-based practices
+            that allow us to begin discovering that contentment has been
+            there all along.
+            <br><br>
+            Simply put, we find some of humanity’s greatest treasures
+            and offer an opportunity for you to begin exploring them.
+          </p>
+        </div>
+    </section>
+
+
+    <section id="chap4" class="chap">
+        <div id="chText4" style="background:#FFF">
+          <p style="color:#515154">
+            <span>What do we do?</span>
+            <br><br>
+            The Contentment Foundation offers child and
+            adult-centered curricula, and studies the
+            effects of contentment scientifically in
+            partnership with some of the top universities
+            in the world. The Contentment Foundation
+            invites everyone to consider that true
+            happiness already resides inside of you.
+            <br><br>
+            <span>The Bigger Picture</span>
+            <br><br>
+            There are many organizations focused on
+            alleviating external poverty, a lack of
+            essential resources like food, water, shelter,
+            education, and safety. We are focused on alleviating
+            internal poverty, a poverty of the mind, heart,
+            and spirit. We help children and adults begin
+            to cultivate a sense of internal and indestructible
+            contentment that is not affected by the external world.
+            Our service is to eliminate internal poverty worldwide
+            by offering sustainable solutions toward experiencing
+            unconditional acceptance, always.
+          </p>
+        </div>
+        <div id="chImgt4" class="chimg" style="background-image:url('img/about_what2.jpg')"></div>
+    </section>
+
+    <section id="donateFooter" class="aboutfooter">
+      <div id="donateW">
+        <div>
+          <a href="donations.html">
+          <h3>Donate</h3>
+          <p>Make our work possible</p>
+          <img src="img/icons/circle.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <footer>
+          <div id="marginfooter"></div>
+          <div id="contentFooter">
+            <div>
+              <p>Copyright (c) 2017 | The Contentment Foundation | All Rights Reserved</p>
+            </div>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li><a href="wellbeing.html">Wellbeing Lab</a></li>
+              <li><a href="involved.html">Get Involved</a></li>
+              <li><a href="offerings.html">Offerings</a></li>
+              <li><a href="team.html">Our Team</a></li>
+            </ul>
+          </div>
+      </footer>
+    </section>
+    <script src="js/bowser.min.js" charset="utf-8"></script>
+    <script src="js/about.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta name="google" content="notranslate"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+    <title>Our Team | The Contentment Foundation</title>
+    <meta name="description" content="Team | The Contentment Foundation is powered by a team of international experts spanning across disciplines like psychology, education, philosophy, business, politics, art, social media, and science."/>
+    <meta name="author" content="fluo.com.mx">
+    <meta property="og:title" content="The Contentment Foundation">
+    <meta property="og:url" content="http://www.contentment.org">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/media.jpg">
+    <meta property="og:description" content="Team | The Contentment Foundation">
+    <meta property="og:site_name" content="The Contentment Foundation">
+    <meta name="description" content="Team | The Contentment Foundation"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@fluomx">
+    <meta name="twitter:title" content="The Contentment Foundation">
+    <meta name="twitter:description" content="Team | The Contentment Foundation">
+    <meta name="twitter:image" content="img/media.jpg">
+    <meta name="keywords" content="The Contentment Foundation, Members, Team"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Varela" rel="stylesheet">
+    <style>
+  	/* LOADING */
+    #menuMain{
+  		opacity: 0;
+
+  		-webkit-transition: all 0.5s ease-out;
+  		-moz-transition: all 0.5s ease-out;
+  		-ms-transition: all 0.5s ease-out;
+  		-o-transition: all 0.5s ease-out;
+  		transition: all 0.5s ease-out;
+  	}
+  	#loading{
+  		position: fixed;
+  		width: 100vw;
+  		height: 100vh;
+  		z-index: 50000;
+  		background: #fff;
+  		text-align: center;
+  		opacity: 1;
+  		display: block;
+
+  		-webkit-transition: all 0.5s ease-out;
+  		-moz-transition: all 0.5s ease-out;
+  		-ms-transition: all 0.5s ease-out;
+  		-o-transition: all 0.5s ease-out;
+  		transition: all 0.5s ease-out;
+  	}
+  	#loading> img{
+  		position: absolute;
+  		width: 200px;
+  		height: 200px;
+  		top: calc(40% - 100px);
+  		left: calc(50% - 100px);
+  	}
+  	#loading> span{
+  		width: 200px;
+  		height: 1px;
+  		background: #C2C1C0;
+  		position: absolute;
+  		display: none;
+  		top: calc(40% + 110px);
+  		left: calc(50% - 100px);
+  	}
+  	#loading> p{
+  		color: #C2C1C0;
+  		width: 200px;
+  		position: absolute;
+  		display: none;
+  		top: calc(40% + 130px);
+  		left: calc(50% - 100px);
+  	}
+  </style>
+  </head>
+  <body>
+    <div id="loading">
+      <img src="img/icons/logo_color.svg" alt="Logo The Contentment Foundation" width="200" height="200">
+      <span></span>
+      <p id="percentage"></p>
+    </div>
+    <p id="size"></p>
+    <div id="btndonate" class="aboutdonate">
+      <a href="donations.html">Donate</a>
+    </div>
+    <nav id="menuMain">
+  				<a href="index.html">
+  					<img src="img/icons/logo.svg" alt="Logotipo Contentment Foundation" width="120">
+  				</a>
+  				<button id="btnMobile" type="button" name="button">
+  					<img id="btnMobileImg" src="img/icons/menu.svg" alt=" ">
+  				</button>
+  				<ul id="menu">
+            <li class="menuLinkLi inicioMobile"><a href="index.html">Home</a></li>
+            <li class="menuLinkLi"><a href="about.html">About Us</a></li>
+  					<li class="menuLinkLi"><a href="community.html">Community</a></li>
+  					<li class="menuLinkLi"><a href="wellbeing.html">Wellbeing Lab</a></li>
+  					<li class="menuLinkLi"><a href="involved.html">Get Involved</a></li>
+  					<li class="menuLinkLi"><a href="offerings.html">Offerings</a></li>
+  					<li class="menuLinkLi"><a href="team.html">Our Team</a></li>
+  					<li id="contactoBack"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web" target="_top">Contact</a></li>
+  					<span></span>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/facebook.svg" alt=" "></a></li>
+  					<li class="socialMobile" style="display:none"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web"><img src="img/icons/instagram.svg" alt=" "></a></li>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/twitter.svg" alt=" "></a></li>
+  				</ul>
+  	</nav>
+
+    <section id="headerTeamDesk">
+    </section>
+
+    <section id="headerTeam">
+      <h1>Our Team</h1>
+      <div id="introTextTeam">
+        <p>
+          The Contentment Foundation is powered by a team
+          of international experts spanning across disciplines
+          like psychology, education, philosophy, business,
+          politics, art, social media, and science. We have
+          come together to invite you into the radical perspective
+          that fundamental wellbeing – contentment – already
+          exists within you.
+        </p>
+        <br>
+        <p>
+          We are proud to work with a globally diverse team to
+          turn our vision – promoting indestructible wellbeing
+          worldwide – into a reality.
+          <br>
+          It is by understanding our diverse needs and perspectives, and finding
+          the unifying principles behind them that make humanity truly great.
+          We are honored to highlight our team here.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="teamDesktop">
+      <h2>Core Team</h2>
+      <p>
+        Our founders are dedicated to reducing suffering
+        in the world by working with schools, organizations,
+        and communities on cultivating sustainable,
+        time-tested wellbeing philosophies.
+      </p>
+      <!-- CORE TEAM -->
+      <div class="teamWrap">
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/daniel-cordaro.jpg')">
+            <a href="team/daniel-cordaro.html" onmouseover="hoverTeam(0)" onmouseout="outTeam(0)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Daniel Cordaro, Ph.D.</h3>
+                <h4>CEO - Chief Equanimity Officer</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/emilio-diez-barroso.jpg')">
+            <a href="team/emilio-diez-barroso.html" onmouseover="hoverTeam(1)" onmouseout="outTeam(1)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Emilio Diez Barroso, M.A.</h3>
+                <h4>CSO - Chief Stillness Officer</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/lisa-michiko.jpg')">
+            <a href="team/lisa-michiko.html" onmouseover="hoverTeam(2)" onmouseout="outTeam(2)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Lisa Michiko Flynn </h3>
+                <h4>CMO - Chief Mindfulness Officer</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>Four Pillars of Wellbeing Curriculum Architects</h2>
+      <p>
+         Our curriculum architects design, develop, and test
+         our Four Pillars of Wellbeing lessons so that they
+         are impactful and translatable to modern classroom
+         environments.
+      </p>
+      <div class="teamWrap">
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/kathryn-lee.jpg')">
+            <a href="team/kathryn-lee.html" onmouseover="hoverTeam(3)" onmouseout="outTeam(3)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Kathryn Lee, M.A</h3>
+                <h4>Families Specialist</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/kelli-love.jpg')">
+            <a href="team/kelli-love.html" onmouseover="hoverTeam(4)" onmouseout="outTeam(4)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Kelli Love, M.Ed</h3>
+                <h4>Mindfulness Educator</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/rachael-han.jpg')">
+            <a href="team/rachael-han.html" onmouseover="hoverTeam(5)" onmouseout="outTeam(5)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Rachel Han</h3>
+                <h4>Implementation Specialist</h4>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/christina-bradley.jpg')">
+            <a href="team/christina-bradley.html" onmouseover="hoverTeam(6)" onmouseout="outTeam(6)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Christina Bradley</h3>
+                <h4>Wellbeing Researcher & Mindfulness Practitioner</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/timothy-tillman.jpg')">
+            <a href="team/timothy-tillman.html" onmouseover="hoverTeam(7)" onmouseout="outTeam(7)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Timothy Tillman, M.A.</h3>
+                <h4>Somatic Psychologist</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/lauren-glass.jpg')">
+            <a href="team/lauren-glass.html" onmouseover="hoverTeam(8)" onmouseout="outTeam(8)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Lauren Glass</h3>
+                <h4>Philosophy Scholar</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>Wellbeing Lab</h2>
+      <p>
+         The research branch of the Contentment
+         Foundation is comprised of our academic
+         partners who are dedicated to promoting
+         positivity, self-awareness, and human
+         flourishing worldwide.
+      </p>
+      <div class="teamWrap">
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/dacher-keltner.jpg')">
+            <a href="team/dacher-keltner.html" onmouseover="hoverTeam(9)" onmouseout="outTeam(9)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Dacher Keltner, Ph.D.</h3>
+                <h4>Professor, UC Berkeley</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/marc-brackett.jpg')">
+            <a href="team/marc-brackett.html" onmouseover="hoverTeam(10)" onmouseout="outTeam(10)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Marc Brackett, Ph.D.</h3>
+                <h4>Director, Yale Center for Emotional Intelligence</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/franklyn-zhu.jpg')">
+            <a href="team/franklyn-zhu.html" onmouseover="hoverTeam(11)" onmouseout="outTeam(11)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Franklyn Zhu</h3>
+                <h4>Director of Data Collection</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/yang-bai.jpg')">
+            <a href="team/yang-bai.html" onmouseover="hoverTeam(12)" onmouseout="outTeam(12)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Yang Bai, M.A.</h3>
+                <h4>Contentment Researcher</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/jia-wei-zhang.jpg')">
+            <a href="team/jia-wei-zhang.html" onmouseover="hoverTeam(13)" onmouseout="outTeam(13)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Jia Wei Zhang, M.A.</h3>
+                <h4>Contentment Researcher</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>Classroom Implementation Team</h2>
+      <p>
+        Our team of international teachers help
+        us get our curricula ready for the classroom
+        by editing, testing, and rolling out the Four
+        Pillars of Wellbeing lessons schoolwide.
+      </p>
+      <div class="teamWrap">
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/joyce-swarzman.jpg')">
+            <a href="team/joyce-swarzman.html" onmouseover="hoverTeam(14)" onmouseout="outTeam(14)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Joyce Swarzman, Ph.D.</h3>
+                <h4>National Pilot School Director & Lifelong Educator</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/marla-vildostegui.jpg')">
+            <a href="team/marla-vildostegui.html" onmouseover="hoverTeam(15)" onmouseout="outTeam(15)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Marla Vildostegui</h3>
+                <h4>Early Primary Teacher and National Pilot School SPOCK</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/sonam-palden.jpg')">
+            <a href="team/sonam-palden.html" onmouseover="hoverTeam(16)" onmouseout="outTeam(16)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Sonam Palden</h3>
+                <h4>Teacher, Royal Academy of Bhutan</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <h2>Foundation Internal Development Team</h2>
+      <p>
+        Our internal development team
+        creates the backbone of our organization,
+        making sure that our day-to-day operations
+        are running smoothly so that we can be of
+        maximum service to the world.
+      </p>
+      <div class="teamWrap">
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/dave-kebo.jpg')">
+            <a href="team/dave-kebo.html" onmouseover="hoverTeam(17)" onmouseout="outTeam(17)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Dave Kebo</h3>
+                <h4>Director of Storytelling</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/melissa-loh.jpg')">
+            <a href="team/melissa-loh.html" onmouseover="hoverTeam(18)" onmouseout="outTeam(18)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Melissa Loh</h3>
+                <h4>Organizational Development</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/jessica-greenwalt.jpg')">
+            <a href="team/jessica-greenwalt.html" onmouseover="hoverTeam(19)" onmouseout="outTeam(19)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#0190BE;">
+                <h3>Jessica Greenwalt</h3>
+                <h4>Graphic Designer & Head Parakeet</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="rowTeam">
+          <li class="imgTeam" style="background-image:url('img/team/tomi-wahlstrom.jpg')">
+            <a href="team/tomi-wahlstrom.html" onmouseover="hoverTeam(20)" onmouseout="outTeam(20)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#54bf97;">
+                <h3>Tomi Wahlstrom</h3>
+                <h4>Grant Writing Specialist</h4>
+              </div>
+            </a>
+          </li>
+          <li class="imgTeam" style="background-image:url('img/team/dorji-wangchuk.jpg')">
+            <a href="team/dorji-wangchuk.html" onmouseover="hoverTeam(21)" onmouseout="outTeam(21)">
+              <div class="top">View Bio</div>
+              <div class="bottom" style="background:#2FC0CE;">
+                <h3>Dorji Wangchuk</h3>
+                <h4>International Outreach & Partnership</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+
+
+  <section id="teamMobile">
+    <h2>Core Team</h2>
+    <ul>
+      <li><a href="team/daniel-cordaro.html"> Daniel Cordaro, Ph.D. <br> <i>CEO - Chief Equanimity Officer</i></a></li>
+      <li><a href="team/emilio-diez-barroso.html">Emilio Diez Barroso, M.A. <br> <i>CTO - Chief Tranquility Officer</i></a></li>
+      <li><a href="team/lisa-michiko.html">Lisa Michiko Flynn <br> <i>CMO - Chief Mindfulness Officer</i></a></li>
+    </ul>
+    <h2>Four Pillars of Wellbeing Curriculum Architects</h2>
+    <ul>
+      <li><a href="team/kathryn-lee.html">  Kathryn Lee, M.A <br> <i>Families Specialist</i></a></li>
+      <li><a href="team/kelli-love.html">Kelli Love, M.Ed <br> <i>Mindfulness Educator</i></a></li>
+      <li><a href="team/rachael-han.html"> Rachel Han <br> <i>Implementation Specialist</i></a></li>
+      <li><a href="team/christina-bradley.html"> Christina Bradley <br> <i>Wellbeing Researcher & Mindfulness Practitioner</i></a></li>
+      <li><a href="team/timothy-tillman.html"> Timothy Tillman, M.A. <br> <i>Somatic Psychologist</i></a></li>
+      <li><a href="team/lauren-glass.html"> Lauren Glass <br> <i>Philosophy & Psychology Specialist</i></a></li>
+    </ul>
+    <h2>Wellbeing Lab</h2>
+    <ul>
+      <li><a href="team/dacher-keltner.html">  Dacher Keltner, Ph.D. <br> <i>Professor, UC Berkeley</i></a></li>
+      <li><a href="team/marc-brackett.html">Marc Brackett, Ph.D. <br> <i>Professor, Yale University</i></a></li>
+      <li><a href="team/franklyn-zhu.html"> Franklyn Zhu <br> <i>Director of Data Collection</i></a></li>
+      <li><a href="team/yang-bai.html"> Yang Bai, M.A. <br> <i>Wellbeing Researcher</i></a></li>
+      <li><a href="team/jia-wei-zhang.html"> Jia Wei Zhang, M.A. <br> <i>Wellbeing Researcher</i></a></li>
+    </ul>
+    <h2>Classroom Implementation Team</h2>
+    <ul>
+      <li><a href="team/joyce-swarzman.html"> Joyce Swarzman, Ed.D. <br> <i>National Pilot School Director & Lifelong Educator</i></a></li>
+      <li><a href="team/marla-vildostegui.html">Marla Vildostegui <br> <i>Early Primary Teacher and National Pilot School SPOCK</i></a></li>
+      <li><a href="team/sonam-palden.html"> Sonam Palden <br> <i>Teacher, Royal Academy of Bhutan</i></a></li>
+    </ul>
+    <h2>Foundation Internal Development Team</h2>
+    <ul>
+      <li><a href="team/dave-kebo.html"> Dave Kebo <br> <i>Director of Storytelling</i></a></li>
+      <li><a href="team/melissa-loh.html">Melissa Loh <br> <i>Organizational Development</i></a></li>
+      <li><a href="team/jessica-greenwalt.html">Jessica Greenwalt <br> <i>Graphic Designer & Head Parakeet</i></a></li>
+      <li><a href="team/tomi-wahlstrom.html"> Tomi Wahlström <br> <i>Grant Writing Specialist</i></a></li>
+      <li><a href="team/dorji-wangchuk.html"> Dorji Wangchuk <br> <i>International Outreach & Partnership</i></a></li>
+    </ul>
+  </section>
+  <section id="donateFooter">
+		<div id="donateW">
+			<div id="donateRot">
+				<a href="donations.html">
+					<h3>Donate</h3>
+					<p>Make our work possible</p>
+					<img src="img/icons/circle.svg" alt="">
+				</a>
+			</div>
+		</div>
+
+		<footer>
+				<div id="marginfooter"></div>
+				<div id="contentFooter">
+					<div>
+						<p>Copyright (c) 2017 | The Contentment Foundation | All Rights Reserved</p>
+					</div>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="community.html">Community</a></li>
+						<li><a href="wellbeing.html">Wellbeing Lab</a></li>
+						<li><a href="involved.html">Get Involved</a></li>
+						<li><a href="offerings.html">Offerings</a></li>
+						<li><a href="team.html">Our Team</a></li>
+					</ul>
+				</div>
+		</footer>
+	</section>
+    <script src="js/bowser.min.js" charset="utf-8"></script>
+    <script src="js/team.js" charset="utf-8"></script>
+  </body>
+</html>

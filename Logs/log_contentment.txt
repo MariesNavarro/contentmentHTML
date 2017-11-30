@@ -1,0 +1,29 @@
+Status:      	Resolving address of ftp.contentment.org
+Status:      	Connection attempt failed with "EAI_NONAME - Neither nodename nor servname provided, or not known".
+Error:        	Could not connect to server
+Status:      	Waiting to retry...
+Status:      	Resolving address of ftp.contentment.org
+Status:      	Connection attempt failed with "EAI_NONAME - Neither nodename nor servname provided, or not known".
+Error:        	Could not connect to server
+Status:      	Disconnected from server
+Status:      	Connecting to 173.254.28.45:21...
+Status:      	Connection established, waiting for welcome message...
+Status:      	Initializing TLS...
+Status:      	Verifying certificate...
+Status:      	TLS connection established.
+Command:	USER contentment-ftp
+Response: 	331 User contentment-ftp OK. Password required
+Command:	PASS ********
+Response: 	530 Login authentication failed
+Error:        	Critical error: Could not connect to server
+Status:      	Disconnected from server
+Status:      	Connecting to 173.254.28.45:21...
+Status:      	Connection established, waiting for welcome message...
+Status:      	Initializing TLS...
+Status:      	Verifying certificate...
+Status:      	TLS connection established.
+Command:	USER ContentmentDBU
+Response: 	331 User ContentmentDBU OK. Password required
+Command:	PASS ********
+Response: 	530 Login authentication failed
+Error:        	Critical error: Could not connect to server

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html style="position:absolute; ">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  	<meta http-equiv="cache-control" content="no-cache"/>
+  	<meta http-equiv="pragma" content="no-cache"/>
+  	<meta name="google" content="notranslate"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+    <title>Donations | The Contentment Foundation</title>
+    <meta name="description" content="The easiest and fastest way to help us continue serving the world is by sending us a donation."/>
+  	<meta name="author" content="fluo.com.mx">
+  	<meta property="og:title" content="The Contentment Foundation">
+  	<meta property="og:url" content="http://www.contentment.org">
+  	<meta property="og:type" content="website">
+  	<meta property="og:image" content="img/media.jpg">
+  	<meta property="og:description" content="The Contentment Foundation">
+  	<meta property="og:site_name" content="The Contentment Foundation">
+  	<meta name="description" content="The Contentment Foundation"/>
+  	<meta name="twitter:card" content="summary_large_image">
+  	<meta name="twitter:creator" content="@fluomx">
+  	<meta name="twitter:title" content="The Contentment Foundation">
+  	<meta name="twitter:description" content="Donations | The Contentment Foundation">
+  	<meta name="twitter:image" content="img/media.jpg">
+  	<meta name="keywords" content="The Contentment Foundation, Donate, Get Involved, Donations"/>
+  	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Varela" rel="stylesheet">
+    <style>
+    /* LOADING */
+    #menuMain{
+  		opacity: 0;
+
+  		-webkit-transition: all 0.5s ease-out;
+  		-moz-transition: all 0.5s ease-out;
+  		-ms-transition: all 0.5s ease-out;
+  		-o-transition: all 0.5s ease-out;
+  		transition: all 0.5s ease-out;
+  	}
+    #loading{
+    	position: fixed;
+    	width: 100vw;
+    	height: 100vh;
+    	z-index: 50000;
+    	background: #fff;
+    	text-align: center;
+    	opacity: 1;
+    	display: block;
+
+    	-webkit-transition: all 0.5s ease-out;
+    	-moz-transition: all 0.5s ease-out;
+    	-ms-transition: all 0.5s ease-out;
+    	-o-transition: all 0.5s ease-out;
+    	transition: all 0.5s ease-out;
+    }
+    #loading> img{
+    	position: absolute;
+    	width: 200px;
+    	height: 200px;
+    	top: calc(40% - 100px);
+    	left: calc(50% - 100px);
+    }
+    #loading> span{
+    	width: 200px;
+    	height: 1px;
+    	background: #C2C1C0;
+    	position: absolute;
+    	display: none;
+    	top: calc(40% + 110px);
+    	left: calc(50% - 100px);
+    }
+    #loading> p{
+    	color: #C2C1C0;
+    	width: 200px;
+    	position: absolute;
+    	display: none;
+    	top: calc(40% + 130px);
+    	left: calc(50% - 100px);
+    }
+    </style>
+  </head>
+  <body>
+  <div id="loading">
+    <img src="img/icons/logo_color.svg" alt="Logo The Contentment Foundation" width="200" height="200">
+    <span></span>
+    <p id="percentage"></p>
+  </div>
+    <nav id="menuMain">
+  				<a href="index.html">
+  					<img src="img/icons/logo.svg" alt="Logotipo Contentment Foundation" width="120">
+  				</a>
+  				<button id="btnMobile" type="button" name="button">
+  					<img id="btnMobileImg" src="img/icons/menu.svg" alt=" ">
+  				</button>
+
+  				<ul id="menu">
+            <li class="menuLinkLi inicioMobile"><a href="index.html">Home</a></li>
+  					<li class="menuLinkLi"><a href="about.html">About Us</a></li>
+  					<li class="menuLinkLi"><a href="community.html">Community</a></li>
+  					<li class="menuLinkLi"><a href="wellbeing.html">Wellbeing Lab</a></li>
+  					<li class="menuLinkLi"><a href="involved.html">Get Involved</a></li>
+  					<li class="menuLinkLi"><a href="offerings.html">Offerings</a></li>
+  					<li class="menuLinkLi"><a href="team.html">Our Team</a></li>
+  					<li id="contactoBack"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web" target="_top">Contact</a></li>
+  					<span></span>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/facebook.svg" alt=" "></a></li>
+  					<li class="socialMobile" style="display:none"><a href="mailto:info@contentment.org?Subject=Contact%20from%20web"><img src="img/icons/instagram.svg" alt=" "></a></li>
+  					<li class="socialMobile"><a href="#"><img src="img/icons/twitter.svg" alt=" "></a></li>
+  				</ul>
+  	</nav>
+    <div id="donations" style="position:absolute; height: auto !important; top:90px; padding-bottom:0; z-index:0;">
+  		<button id="closeDonations" style="display:none;">X</button>
+  		<div id="headDonation">
+  			<h2>Supporting Our Work</h2>
+        <a href="index.html">
+          <img src="img/icons/logo_color.svg" alt="The Contentment Foundation">
+        </a>
+  			<p>The easiest and fastest way to help us continue serving
+          the world is by sending us a donation. As a registered 501(c)3
+          nonprofit foundation, your donation is tax-deductible to the
+          fullest extent allowed by law. Let us know where you would like
+          your donation to go (e.g., education, science, outreach) – and we’ll
+          make sure that it’s used exactly for that purpose.</p>
+  		</div>
+
+      <h3 style="color: #2FC0CE;">Custom</h3>
+  		<div class="donateButtons" style="margin-top:10px">
+  				<div>
+  					<a role="button" target="_blank">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="Z3BVGJFZ43ERS">
+              <button id="donationPaypalDon" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                Custom donation
+              </button>
+              </form>
+            </a>
+  					<br><br>
+  					<p style="margin-bottom:0;">Contribute a custom amount here. We are deeply grateful for your support.</p>
+  				</div>
+  		</div>
+
+  		<h3 style="color: #0190BE;">Give Once</h3>
+  		<div class="donateButtons">
+  				<div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/one-time-donation-$5" target="_blank" class="oneTime">One time $5</a>
+  					<br><br><br><br>
+  					<p>The cost for two children from low income schools to receive the Four Pillars of Wellbeing Curriculum.</p>
+  				</div>
+  				<div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/one-time-donation-$25" target="_blank" class="oneTime">One time $25</a>
+  					<br><br><br><br>
+  					<p>Ten children from low income schools can receive the Four Pillars of Wellbeing Curriculum.</p>
+  				</div>
+          <div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/one-time-donation-$300" target="_blank" class="oneTime">One time $300</a>
+  					<br><br><br><br>
+  					<p>An entire classroom at a low income school can receive the Four Pillars of Wellbeing Curriculum.</p>
+  				</div>
+  		</div>
+
+  		<h3 style="color: #54bf97; margin-top:50px">Monthly</h3>
+  		<div class="donateButtons">
+  				<div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/monthly-donation-of-$5" target="_blank" class="recurringTime">Recurring $5</a>
+  					<br><br><br><br>
+  					<p>After one year of donating at this level, an entire classroom can be trained in the Four Pillars of Wellbeing Curriculum.</p>
+  				</div>
+  				<div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/monthly-donation-of-$25" target="_blank" class="recurringTime">Recurring $25</a>
+  					<br><br><br><br>
+  					<p>After one year of donating at this level, an entire classroom at a low income school can receive the Four Pillars of Wellbeing Curriculum.</p>
+  				</div>
+  				<div>
+  					<a href="https://contentmentfoundation.chargebee.com/hosted_pages/plans/monthly-donation-of-$300" target="_blank" class="recurringTime">Recurring $300</a>
+  					<br><br><br><br>
+  					<p>After one year donating at this level, an entire school is trained, and you receive a heartfelt thank you note from the students and teachers for your generosity.</p>
+  				</div>
+  		</div>
+      <div id="alternativeFooter" style="background:#515154">
+        <div>
+          <p>Copyright (c) 2017 | The Contentment Foundation | All Rights Reserved</p>
+        </div>
+        <br>
+      </div>
+  	</div>
+    <script src="js/bowser.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    var checkMobile = false;
+    var headT =  document.getElementsByTagName("head")[0];
+    var linkCSS  = document.createElement('link');
+    var menuLinkLi = document.getElementsByClassName('menuLinkLi');
+    linkCSS.rel  = 'stylesheet';
+    linkCSS.type = 'text/css';
+
+    window.onload = function(){
+    if(bowser.mobile || bowser.tablet || /SymbianOS/.test(window.navigator.userAgent)) checkMobile = true;
+    	if(checkMobile){
+        linkCSS.href = "css/masterMobile.css";
+        headT.appendChild(linkCSS);
+    		console.log("Mobile");
+    	}else{
+        linkCSS.href = "css/masterDesktop.css";
+        headT.appendChild(linkCSS);
+    		console.log("Desktop");
+    	}
+    }
+
+    window.addEventListener("orientationchange", function() {
+  	if(window.orientation == 90 || window.orientation == -90){
+  		for(var i =0; i < menuLinkLi.length; i++){
+  			menuLinkLi[i].style.marginBottom = "2px";
+  		}
+  	} else {
+  		for(var i =0; i < menuLinkLi.length; i++){
+  			menuLinkLi[i].style.marginBottom = "15px";
+  			}
+  	}
+  }, false);
+
+    function _(el){return document.getElementById(el); }
+    	var btnMobile = _('btnMobile'),
+    			btnMobileImg = _('btnMobileImg'),
+    			menu = _('menu'),
+    			openMobile = true;
+
+    			btnMobile.addEventListener('click', function(){
+    			  openMobile = !openMobile;
+    			  if(openMobile){
+    			    btnMobileImg.setAttribute('src', 'img/icons/close.svg');
+    			    menu.style.left  = "0";
+    			  } else {
+    			    btnMobileImg.setAttribute('src', 'img/icons/menu.svg');
+    			    menu.style.left  = "100%";
+    			  }
+    			});
+          var menuMain = _('menuMain');
+          var percentage = _('percentage');
+          var loading = _('loading');
+          var valPercentage = 0;
+          var loop = setInterval(function(){
+            valPercentage++;
+            percentage.innerHTML = valPercentage + "%";
+            if(valPercentage > 99) {
+              clearInterval(loop);
+              loading.style.opacity = "0";
+              setTimeout(function(){
+                loading.style.display = "none";
+                menuMain.style.opacity = "1";
+              },1000)
+            }
+          },10);
+    </script>
+  </body>
+</html>

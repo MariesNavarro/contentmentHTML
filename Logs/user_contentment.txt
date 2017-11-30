@@ -1,0 +1,6 @@
+User: contentment-ftp
+Pass: Aeek32~6
+
+DB: ContentmentDB
+User: ContentmentDBU
+Pass: Afwk93@8
